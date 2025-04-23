@@ -3,34 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Real Estate Analyzer | PropertyAI</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@32,400,0,0" />
+    <title>Real Estate Analyzer | PropAI</title>
+    <!-- Google Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
       <!-- App Header -->
       <header class="app-header">
-        <h1 class="heading">PropertyAI</h1>
-        <h4 class="sub-heading">Your AI real estate analyst</h4>
+        <h1 class="heading">Welcome to PropAI</h1>
+        <h4 class="sub-heading">Your smart assistant for property insights</h4>
       </header>
       <!-- Suggestions List -->
       <ul class="suggestions">
         <li class="suggestions-item">
-          <p class="text">What's the current market trend in my area?</p>
+          <p class="text">What’s the estimated value of this property?</p>
+          <span class="icon material-symbols-rounded">home</span>
+        </li>
+        <li class="suggestions-item">
+          <p class="text">What’s the ROI on this investment?</p>
           <span class="icon material-symbols-rounded">trending_up</span>
         </li>
         <li class="suggestions-item">
-          <p class="text">How do I estimate the value of my property?</p>
-          <span class="icon material-symbols-rounded">calculate</span>
+          <p class="text">Is this a good neighborhood to invest in?</p>
+          <span class="icon material-symbols-rounded">location_on</span>
         </li>
         <li class="suggestions-item">
-          <p class="text">What factors affect property prices the most?</p>
-          <span class="icon material-symbols-rounded">insights</span>
-        </li>
-        <li class="suggestions-item">
-          <p class="text">Is now a good time to buy/sell in this market?</p>
-          <span class="icon material-symbols-rounded">schedule</span>
+          <p class="text">What are the recent sale prices nearby?</p>
+          <span class="icon material-symbols-rounded">bar_chart</span>
         </li>
       </ul>
       <!-- Chats -->
@@ -39,7 +40,7 @@
       <div class="prompt-container">
         <div class="prompt-wrapper">
           <form action="#" class="prompt-form">
-            <input type="text" placeholder="Ask about property values, market trends, or investment advice..." class="prompt-input" required />
+            <input type="text" placeholder="Ask anything about a property or market trends..." class="prompt-input" required />
             <div class="prompt-actions">
               <!-- File Upload Wrapper -->
               <div class="file-upload-wrapper">
@@ -58,7 +59,7 @@
           <button id="theme-toggle-btn" class="material-symbols-rounded">light_mode</button>
           <button id="delete-chats-btn" class="material-symbols-rounded">delete</button>
         </div>
-        <p class="disclaimer-text">PropertyAI provides estimates only. Consult a professional for financial advice.</p>
+        <p class="disclaimer-text">Property insights may vary, always verify with local data.</p>
       </div>
     </div>
     <script src="script.js"></script>
