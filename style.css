@@ -1,0 +1,55 @@
+/* Updated CSS with real estate theme colors */
+:root {
+  /* Dark theme colors */
+  --text-color: #edf3ff;
+  --subheading-color: #97a7ca;
+  --placeholder-color: #c3cdde;
+  --primary-color: #101623;
+  --secondary-color: #283045;
+  --secondary-hover-color: #333e58;
+  --scrollbar-color: #626a7f;
+  --accent-color: #4a8fe7; /* Real estate blue */
+}
+
+body.light-theme {
+  /* Light theme colors */
+  --text-color: #090c13;
+  --subheading-color: #7b8cae;
+  --placeholder-color: #606982;
+  --primary-color: #f3f7ff;
+  --secondary-color: #dce6f9;
+  --secondary-hover-color: #d2ddf2;
+  --scrollbar-color: #a2aac2;
+  --accent-color: #1d7efd;
+}
+
+.app-header .heading {
+  background: linear-gradient(to right, var(--accent-color), #8f6fff);
+}
+
+/* Update suggestion item colors */
+.suggestions .suggestions-item .icon {
+  color: var(--accent-color);
+}
+
+.suggestions .suggestions-item:nth-child(2) .icon {
+  color: #28a745; /* Green for valuation */
+}
+
+.suggestions .suggestions-item:nth-child(3) .icon {
+  color: #ffc107; /* Gold for factors */
+}
+
+.suggestions .suggestions-item:nth-child(4) .icon {
+  color: #6f42c1; /* Purple for timing */
+}
+
+.prompt-form #send-prompt-btn {
+  background: var(--accent-color);
+}
+
+.prompt-form #send-prompt-btn:hover {
+  background: #0264e3;
+}
+
+/* Rest of the CSS remains largely the same */
