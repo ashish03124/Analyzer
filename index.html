@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real Estate Analyzer | PropertyAI</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@32,400,0,0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- App Header -->
+      <header class="app-header">
+        <h1 class="heading">PropertyAI</h1>
+        <h4 class="sub-heading">Your AI real estate analyst</h4>
+      </header>
+      <!-- Suggestions List -->
+      <ul class="suggestions">
+        <li class="suggestions-item">
+          <p class="text">What's the current market trend in my area?</p>
+          <span class="icon material-symbols-rounded">trending_up</span>
+        </li>
+        <li class="suggestions-item">
+          <p class="text">How do I estimate the value of my property?</p>
+          <span class="icon material-symbols-rounded">calculate</span>
+        </li>
+        <li class="suggestions-item">
+          <p class="text">What factors affect property prices the most?</p>
+          <span class="icon material-symbols-rounded">insights</span>
+        </li>
+        <li class="suggestions-item">
+          <p class="text">Is now a good time to buy/sell in this market?</p>
+          <span class="icon material-symbols-rounded">schedule</span>
+        </li>
+      </ul>
+      <!-- Chats -->
+      <div class="chats-container"></div>
+      <!-- Prompt Input -->
+      <div class="prompt-container">
+        <div class="prompt-wrapper">
+          <form action="#" class="prompt-form">
+            <input type="text" placeholder="Ask about property values, market trends, or investment advice..." class="prompt-input" required />
+            <div class="prompt-actions">
+              <!-- File Upload Wrapper -->
+              <div class="file-upload-wrapper">
+                <img src="#" class="file-preview" />
+                <input id="file-input" type="file" accept="image/*, .pdf, .txt, .csv" hidden />
+                <button type="button" class="file-icon material-symbols-rounded">description</button>
+                <button id="cancel-file-btn" type="button" class="material-symbols-rounded">close</button>
+                <button id="add-file-btn" type="button" class="material-symbols-rounded">attach_file</button>
+              </div>
+              <!-- Send Prompt and Stop Response Buttons -->
+              <button id="stop-response-btn" type="button" class="material-symbols-rounded">stop_circle</button>
+              <button id="send-prompt-btn" class="material-symbols-rounded">arrow_upward</button>
+            </div>
+          </form>
+          <!-- Theme and Delete Chats Buttons -->
+          <button id="theme-toggle-btn" class="material-symbols-rounded">light_mode</button>
+          <button id="delete-chats-btn" class="material-symbols-rounded">delete</button>
+        </div>
+        <p class="disclaimer-text">PropertyAI provides estimates only. Consult a professional for financial advice.</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
