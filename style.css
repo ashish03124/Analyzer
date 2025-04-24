@@ -257,3 +257,24 @@ body.chats-active .container :where(.app-header, .suggestions) {
     height: 44px;
   }
 }
+
+/* Message Formatting Enhancements */
+.message-text p {
+  margin-bottom: 10px;
+}
+
+.message-text strong {
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.message-text ul {
+  margin-left: 1rem;
+  padding-left: 1rem;
+  list-style: disc;
+}
+
+.message-text li {
+  margin-bottom: 6px;
+  line-height: 1.5;
+}
